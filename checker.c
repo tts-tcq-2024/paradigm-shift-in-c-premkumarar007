@@ -10,9 +10,9 @@ int isWithinRange(float value, float min, float max, const char* message) {
 }
 
 int batteryIsOk(float temperature, float soc, float chargeRate) {
-  return isWithinRange(temperature, 0, 45, "Temperature out of range!") &&
-         isWithinRange(soc, 20, 80, "State of Charge out of range!") &&
-         isWithinRange(chargeRate, 0, 0.8, "Charge Rate out of range!");
+  return isWithinRange(temperature, 0, 45, "Temperature out of range!")&&
+    isWithinRange(soc, 20, 80, "State of Charge out of range!")&&
+    isWithinRange(chargeRate, 0, 0.8, "Charge Rate out of range!");
 }
 
 int main() {
