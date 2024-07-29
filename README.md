@@ -59,3 +59,20 @@ Shorten the Semantic distance
 - Functional to express relation between input and output
 - Object oriented to encapsulate state with actions
 - Apect oriented to capture repeating aspects
+
+## Extensions Implemented
+
+### Early Warning Feature
+Added an early warning feature with a tolerance of 5% of the upper limit for temperature, state of charge (SoC), and charge rate. The system provides warnings when values approach the limits.
+
+- **Temperature Warning Range**: 0 to 45 with a warning tolerance of 2.25.
+  - Approaching discharge warning below 2.25
+  - Approaching charge-peak warning above 42.75
+
+- **State of Charge (SoC) Warning Range**: 20 to 80 with a warning tolerance of 4.
+  - Approaching discharge warning below 24
+  - Approaching charge-peak warning above 76
+
+- **Charge Rate Warning Range**: 0 to 0.8 with a warning tolerance of 0.04.
+  - Approaching discharge warning below 0.04
+  - Approaching charge-peak warning above 0.76
